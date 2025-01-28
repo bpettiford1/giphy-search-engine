@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+    font-family: 'Pacifico', cursive; /* Applying the random Google Font */
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff6600;
+  }
+  
+  /* Search Bar Styles */
+  #search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  #search-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  #search-input:focus {
+    border-color: #ff6600;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e55d00;
+  }
+  
+  /* Results Grid Styles */
+  #results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #results img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #results img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav {
+      margin-top: 10px;
+      flex-direction: column;
+    }
+  
+    nav a {
+      margin: 5px 0;
+    }
+  
+    #search-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #search-input {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+  
+    button {
+      border-radius: 5px;
+    }
+  
+    #results {
+      grid-template-columns: 1fr;
+    }
+  }
+  
