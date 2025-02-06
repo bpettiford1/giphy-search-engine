@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giphy Search Engine</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy Search Engine</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Giphy Search Engine</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <form id="search-form">
-      <input type="search" id="search-input" placeholder="Search for GIFs..." required>
-      <button type="submit">Search</button>
-    </form>
-    <div id="results"></div>
-  </main>
-  <script src="main.js"></script>
+    <header>
+        <h1>Giphy Search Engine</h1>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"></a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776; <!-- Hamburger icon -->
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+        </nav>
+    </header>
+    <header>
+    <main>
+        <!-- Search Form -->
+        <form id="search-form">
+            <input type="search" id="search-input" placeholder="Search for GIFs..." required>
+            <button type="submit">Search</button>
+        </form>
+        <!-- Results Section -->
+        <div id="resultsContainer"></div>
+    </main>
+    <script src="../js/main.js" ></script>
 </body>
 </html>
